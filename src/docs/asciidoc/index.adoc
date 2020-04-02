@@ -1,0 +1,57 @@
+:lang: ja
+:doctype: article
+:toc: left
+:toc-title: 目次
+:sectnums:
+:chapter-label:
+:table-caption: 表
+:figure-caption: 図
+:example-caption: 例
+:docname: = ドキュメント名
+:author: 執筆者
+:revnumber: 0.1
+:revdate: 2020/4/2
+:title: HTMLタイトル
+:sectanchors:
+:sectlinks:
+
+= ドキュメントタイトル
+
+== 見出し1
+
+本文1
+本文2 +
+本文3 +
+
+
+== 見出し2
+
+本文1
+本文2
+
+=== 見出し2-1
+
+本文1
+
+== 見出し3
+
+[source, java]
+.Main.java
+----
+public Class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello asciidoctorj");
+    }
+}
+----
+
+
+== PlantUML埋め込み
+
+[plantuml]
+.シーケンス図
+----
+actor ユーザー as user
+user -> ログイン : ログインする
+ログイン --> user:
+----
