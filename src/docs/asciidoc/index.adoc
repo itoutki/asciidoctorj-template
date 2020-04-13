@@ -1,5 +1,5 @@
 :lang: ja
-:doctype: article
+:doctype: book
 :toc: left
 :toc-title: 目次
 :sectnums:
@@ -31,7 +31,7 @@
 
 === 見出し2-1
 
-本文1
+これは本文のテストです。abcdefg hgijklmn と半角文字が入るとどうなるのかテストです。①とかいけるのかな？
 
 == 見出し3
 
@@ -55,3 +55,13 @@ actor ユーザー as user
 user -> ログイン : ログインする
 ログイン --> user:
 ----
+
+== link
+
+* link:https://www.google.co.jp/[Google]
+* link:./sub/sub.html[sub]
+
+== include
+
+
+include::sub/sub.adoc[]

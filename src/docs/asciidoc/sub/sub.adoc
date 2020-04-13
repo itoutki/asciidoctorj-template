@@ -1,0 +1,67 @@
+== plain text
+
+This is a pen. +
+This is a apple. +
+Umm, apple pen. +
+
+
+== list
+
+* list 1
+* list 2
+* list 3
+** list 3-1
+** list 3-2
+** list 3-3
+
+== image
+
+image::http://placehold.it/350x150[placehold]
+
+== link
+
+link:https://www.google.co.jp/[Google]
+link:./sub[sub]
+
+== table
+
+.table-title
+[options="header"]
+|=================
+| Col 1 | Col 2 | Col 3
+| 1     | item1 | a
+| 2     | item2 | b
+| 3     | item3 | c
+|=================
+
+.csv-table-title
+[format="csv"]
+[options="header"]
+|=================
+col1,col2,col3
+1,item1,a
+2,item2,b
+3,item3,c
+|=================
+
+== code block
+
+[source, java]
+.Main.java
+----
+public Class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello asciidoctorj");
+    }
+}
+----
+
+== plantUML
+
+[plantuml]
+.sequence
+----
+actor ユーザー as user
+user -> ログイン : ログインする
+ログイン --> user:
+----
